@@ -1,0 +1,95 @@
+/*This will give a backgound to website.*/
+
+body{
+    background-image: url('https://img.freepik.com/free-photo/watercolor-paper-texture_1194-6496.jpg?semt=ais_hybrid');
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*This will give background to grid container, so the gaps will be colored black.*/
+
+.container{
+    display: grid;
+    grid-template-columns: 80px 90px 90px 190px 115px 110px 40px;
+    grid-template-rows: 90px 190px 190px 90px 85px 50px 27px;
+    background-color: #000;
+    gap: 13px;
+    width: 793px;
+    height: 800px;
+    border: 20px double #a31111;
+    box-shadow: 5px 8px 20px 0px;
+}
+
+/*This will give colors to small div boxes inside.*/
+
+.one, .eight, .thirteen{
+    background-color: #E5EEEB;
+}
+
+.two, .ten, .twenty{
+    background-color: #F2E7D5;
+}
+
+.three, .seven, .fourteen{
+    background-color: #F2C968;
+}
+
+.four, .five, .fifteen{
+    background-color: #FBFDE7;
+}
+
+.six, .seventeen{
+    background-color: #D62D24;
+}
+
+.nine, .twelve, .eighteen{
+    background-color: #DFE5D0;
+}
+
+.eleven, .nineteen{
+    background-color: #130409;
+}
+
+/*This will give sizes to divs.*/
+
+.one, .two, .three, .seven, .thirteen{
+    grid-column: span 2;
+}
+
+.four{
+    grid-row: span 4;
+}
+
+.six{
+    grid-area: 2 / 2 / 4 / 5;
+}
+
+.eight{
+    grid-row: 3 / 5;
+}
+
+.eleven{
+    grid-area: 4 / 2 / 6 / 4;
+}
+
+.fourteen, .seventeen{
+    grid-row: span 3;
+}
+
+.sixteen{
+    background-color: #241785;
+    grid-area: 5 / 5 / 7 / 7;
+}
+
+.eighteen{
+    grid-area: 6 / 2 / 8 / 4;
+}
+
+.twenty{
+    grid-column: span 3;
+}
